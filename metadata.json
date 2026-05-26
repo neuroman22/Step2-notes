@@ -1,0 +1,6 @@
+{
+  "name": "Medical Study Notebook & Step 2 CK Tracker",
+  "description": "Daily study tool with subjects, topics, flashcards, text highlighting, calendar tasks, progress dashboards, and Step 2 CK CMS/NBME score analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

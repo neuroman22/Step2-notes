@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Global Dark Theme Radial Ambient BG & Base Text Color */
+body {
+  background-color: #0f172a;
+  background-image: radial-gradient(circle at 20% 30%, #1e293b 0%, #0f172a 100%);
+  background-attachment: fixed;
+  color: #f8fafc;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Frosted glass helper styles with fallback & webkit support */
+.frosted-glass {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.frosted-glass-heavy {
+  background-color: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Wavy / dotted terminology helper styles */
+.medical-term-underline {
+  border-bottom: 2px dotted #38bdf8;
+  background-color: rgba(56, 189, 248, 0.12);
+  color: #ffffff;
+  padding: 0px 4px;
+  border-radius: 4px;
+}
+
+.medical-term-underline:hover {
+  background-color: rgba(56, 189, 248, 0.22);
+}
+
+/* Scrollbar customization for high visual polish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Ambient glow indicators */
+.med-blue-glow {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.med-teal-glow {
+  box-shadow: 0 0 20px rgba(45, 212, 191, 0.15);
+}
